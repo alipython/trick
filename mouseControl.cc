@@ -1,10 +1,10 @@
-/* *************************************
+/* ************************************
 *
 * @Author         Noxaean
 * @Email          noxaean@gmail.com
 * @Description  
 * @Created        2017-01-06 15:37:38
-* @Last Modified  2017-01-09 16:38:43
+* @Last Modified  2017-01-10 10:46:26
 *
 * ****************************************/
 #include <iostream>
@@ -19,9 +19,9 @@ void joinParty(){
 	// join the party
 	SetCursorPos(247,80);
 	mouse_event(MOUSEEVENTF_LEFTDOWN|MOUSEEVENTF_LEFTUP,0,0,0,0);
-	
+	SYSTEMTIME sys;
 	//auto mission
-	
+	GetLocalTime(&sys);
 	SetCursorPos(247,80);
 	mouse_event(MOUSEEVENTF_LEFTDOWN|MOUSEEVENTF_LEFTUP,0,0,0,0);
 }
@@ -41,16 +41,23 @@ void joinParty(){
 using namespace std;
 int main(){
 	POINT pt;
-	GetCursorPos(&pt);
-	cout << "hehe" << pt.x << "and " << pt.y << endl;	
+	//while(true){
+	//GetCursorPos(&pt);
+	//cout << "hehe" << pt.x << "and " << pt.y << endl;	
+	//Sleep(1000);
+	//}
+	SYSTEMTIME sys;
+	//auto mission
+	GetLocalTime(&sys);
 	struct tm *timer;
 	time_t timep;
 	time(&timep);
-	timer = localtime(&timep);
-	cout << "h" << timer->tm_hour << "m" << timer->tm_sec << endl;
+	timer = gmtime(&timep);
+	cout << "h" << timer->tm_hour << "m" << timer->tm_min << endl;
+	cout << "h " << sys.wHour << endl;
 	// define 10:00 activity
 	Sleep(5000);
-	cout << "h" << timer->tm_hour << "m" << timer->tm_sec << endl;
+	cout << "h" << timer->tm_hour << "m" << timer->tm_min << endl;
 	return 0;
 }
 
