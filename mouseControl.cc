@@ -4,7 +4,7 @@
  * @Email          noxaean@gmail.com
  * @Description  
  * @Created        2017-01-06 15:37:38
- * @Last Modified  2017-01-12 00:26:59
+ * @Last Modified  2017-01-12 01:09:43
  *
  * ****************************************/
 #include <iostream>
@@ -29,20 +29,20 @@ struct Pos{
 
 */
 
-struct Pos duoren = {950,100};
-struct Pos quickJoin = {3,3};  //need modified
-struct Pos danren = {1010,100};
-struct Pos swithDanren = {1085,400};
+Pos duoren = {950,100};
+Pos quickJoin = {3,3};  //need modified
+Pos danren = {1010,100};
+Pos swithDanren = {1085,400};
 vector<Pos> singlFB = { {405,617},{681,617},{957,617}};
 
-struct Pos huodong      =       {1065,100};
-struct Pos joinHD       =       {1000,645};
-struct Pos joinHD2      =       {687,578}; //  kua fu zhanchang
-struct Pos autoMission  =       {1248,342};
-struct Pos quora        =       {355,164};
-struct Pos revive		=		{768,504};
-struct Pos guildTask	=		{1153,524};
-struct Pos battle		=		{700,500};
+Pos huodong      =       {1065,100};
+Pos joinHD       =       {1000,645};
+Pos joinHD2      =       {687,578}; //  kua fu zhanchang
+Pos autoMission  =       {1248,342};
+Pos quora        =       {355,164};
+Pos revive		=		{768,504};
+Pos guildTask	=		{1153,524};
+Pos battle		=		{700,500};
 vector<Pos> mission		=		{ {1313,430}, {1318,428} , {} , {}};
 
 /*
@@ -50,16 +50,16 @@ vector<Pos> mission		=		{ {1313,430}, {1318,428} , {} , {}};
 
 */
 vector<Pos> Bosses      =       { {821,466},{1071,466},{437,613},{688,613},{940,613},{444,319},{691,319},{938,319},{567,467},{823,467},{1072,467} };
-struct Pos swithBoss    =       {1085,400};
-struct Pos bossItem     =       {337,160};
-struct Pos killBoss     =       {1343,327};
-struct Pos leaveBoss    =       {1328,265};
+Pos swithBoss    =       {1085,400};
+Pos bossItem     =       {337,160};
+Pos killBoss     =       {1343,327};
+Pos leaveBoss    =       {1328,265};
 /*
 
    Init refresh Pos
 
 */
-struct Pos refresh      =       {645,51};
+Pos refresh      =       {645,51};
 vector<Pos> confirms    =       { {724,714}, {724,704},{724,694},{724,684},{724,674},{724,664},{724,654},{724,644},{724,634},{724,624},{724,614},
     {724,604},{724,594},{724,584},{724,574}};
 
@@ -67,10 +67,10 @@ vector<Pos> confirms    =       { {724,714}, {724,704},{724,694},{724,684},{724,
    Init Clean Page Pos
 
 */
-struct  Pos closeLM     =       {1150,105};
-struct  Pos closeDR     =       {1100,105};
-struct  Pos closeLB     =       {1280,425};
-struct  Pos closeWZDL   =       {735,490};
+Pos closeLM     =       {1150,105};
+Pos closeDR     =       {1100,105};
+Pos closeLB     =       {1280,425};
+Pos closeWZDL   =       {735,490};
 
 void click(Pos pos,  int repeat=1, int interval=200){
     int x = pos.x;
