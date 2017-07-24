@@ -45,3 +45,4 @@ int main(){
 	GetScreenShot();
 	return 0;
 }
+//end
