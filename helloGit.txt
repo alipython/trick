@@ -3,4 +3,5 @@ remote a
 patch loacal
 if master >> changed >> patch will failed
 
+patch loacal2
 remote b
