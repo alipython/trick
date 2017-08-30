@@ -2,3 +2,5 @@ local a
 remote a
 patch loacal
 if master >> changed >> patch will failed
+
+remote b
