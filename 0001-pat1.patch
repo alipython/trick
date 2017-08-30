@@ -1,0 +1,19 @@
+From 1f350ceda1f319ef4c5b571c3fd282b6496bf294 Mon Sep 17 00:00:00 2001
+From: alipython <ali.chengjun@gmail.com>
+Date: Thu, 31 Aug 2017 00:23:16 +0800
+Subject: [PATCH] pat1
+
+---
+ helloGit.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/helloGit.txt b/helloGit.txt
+index 145e00e..25840f4 100644
+--- a/helloGit.txt
++++ b/helloGit.txt
+@@ -1 +1,2 @@
+ local a 
++patch loacal
+-- 
+2.6.2
+
